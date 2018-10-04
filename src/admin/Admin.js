@@ -1,4 +1,9 @@
 import React, { Component } from 'react'
+import {Route} from 'react-router-dom'
+
+import AdminMenu from './AdminMenu';
+import AdminPortfolio from './AdminPortfolio';
+
 
 class Admin extends Component {
     constructor(props) {
@@ -7,7 +12,11 @@ class Admin extends Component {
 
     render() {
         return (
-            <h2>Painel Administrativo</h2>
+            <div>
+                <h2>Painel Administrativo</h2>
+                <Route path={'/'} component={AdminMenu} />
+                <Route path={'/admin/portfolio'} component={AdminPortfolio} />
+            </div>
         )
     }
 }
