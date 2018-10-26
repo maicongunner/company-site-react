@@ -14,7 +14,6 @@ class AdminPortfolio extends Component {
         
         const arquivo = this.imagem.files[0]
         const {name, size, type} = arquivo
-        console.log(name, size, type);
 
         const ref = storage.ref(name)
         ref.put(arquivo)

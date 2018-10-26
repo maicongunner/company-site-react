@@ -9,6 +9,7 @@ import Servicos from './componentes/Servicos'
 import Portfolio from './componentes/Portfolio'
 import Precos from './componentes/Precos'
 import Contatos from './componentes/Contatos'
+import Login from './admin/Login'
 
 // Area administrativa
 import Admin from './admin/Admin'
@@ -27,6 +28,7 @@ class App extends Component {
           <Route path='/portfolio' component={Portfolio} />
           <Route path='/precos' component={Precos} />
           <Route path='/contato' component={Contatos} />
+          <Route path='/login' component={Login} />
 
           {/* tela painel administrativo */}
           <Route path='/admin' component={Admin} />
